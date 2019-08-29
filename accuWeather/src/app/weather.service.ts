@@ -25,15 +25,15 @@ export class WeatherService {
 
   location(city){
     if(city == 'tel aviv'){
-      this._locationUrl = 'http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&q=tel%20aviv&language=en-us';
+      this._locationUrl = 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&q=tel%20aviv&language=en-us';
     }
 
     else if(city == 'amsterdam'){
-      this._locationUrl = 'http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&q=amsterdam&language=en-us';
+      this._locationUrl = 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&q=amsterdam&language=en-us';
     }
 
     else if(city == 'paris'){
-      this._locationUrl = 'http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&q=paris&language=en-us';
+      this._locationUrl = 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&q=paris&language=en-us';
     }
 
     else{
@@ -44,15 +44,15 @@ export class WeatherService {
 
   weather(city){
     if(city == 'tel aviv'){
-      this._weatherUrl = 'http://dataservice.accuweather.com/currentconditions/v1/215793?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=true';
+      this._weatherUrl = 'https://dataservice.accuweather.com/currentconditions/v1/215793?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=true';
     }
 
     if(city == 'amsterdam'){
-      this._weatherUrl = 'http://dataservice.accuweather.com/currentconditions/v1/249758?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=true';
+      this._weatherUrl = 'https://dataservice.accuweather.com/currentconditions/v1/249758?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=true';
     }
 
     if(city == 'paris'){
-      this._weatherUrl = 'http://dataservice.accuweather.com/currentconditions/v1/623?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=true';
+      this._weatherUrl = 'https://dataservice.accuweather.com/currentconditions/v1/623?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=true';
     }
 
     return this.http.get(this._weatherUrl);
@@ -61,15 +61,15 @@ export class WeatherService {
 
   fiveDayWeather(city){
     if(city == 'tel aviv'){
-      this._fiveDayWeatherUrl = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/215793?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=false&metric=true';
+      this._fiveDayWeatherUrl = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/215793?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=false&metric=true';
     }
 
     if(city == 'amsterdam'){
-      this._fiveDayWeatherUrl = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/249758?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=false&metric=true';
+      this._fiveDayWeatherUrl = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/249758?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=false&metric=true';
     }
 
     if(city == 'paris'){
-      this._fiveDayWeatherUrl = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/623?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=false&metric=true';
+      this._fiveDayWeatherUrl = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/623?apikey=AZs6g1tBMmFOQLqTGXFsYzAYWEeOAG8b&language=en-us&details=false&metric=true';
     }
 
     return this.http.get(this._fiveDayWeatherUrl);
